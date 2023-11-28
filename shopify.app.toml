@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "[PROD] novus"
+client_id = "62335f37313f4ab40cef961e7391c402"
+application_url = "https://senate-frames-her-jokes.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_checkout_branding_settings,read_checkout_branding_settings,read_files,write_files,read_themes"
+
+[auth]
+redirect_urls = [
+  "https://senate-frames-her-jokes.trycloudflare.com/auth/callback",
+  "https://senate-frames-her-jokes.trycloudflare.com/auth/shopify/callback",
+  "https://senate-frames-her-jokes.trycloudflare.com/api/auth/callback",
+  "https://senate-frames-her-jokes.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "rasul-checkout-ui-ext.myshopify.com"
